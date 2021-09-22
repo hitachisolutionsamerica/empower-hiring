@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = ""
+authors = ["Brian Aiken <baiken@hitachisolutions.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+SQLAlchemy = "^1.4.22"
+pydantic = "^1.8.2"
+pytest = "^6.2.4"
+uvicorn = "^0.15.0"
+pytest-cov = "^2.12.1"
+dependency-injector = "^4.35.2"
+fastapi = "^0.68.0"
+fastapi-utils = "^0.2.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,14 @@
+Core: Base level classes, utility helpers, type extensions.  NO DEPENDENCIES on Data, Domain or Host
+    (Applicable to every FastAPI Application)
+
+Data: Data Context specific logic.  Not Application Specific.  No Dependencies on Domain or Host
+
+Domain: Application/Business Specific Logic
+    Repository: Responsible for working w/ the data context
+    Manager: Responsible for applying business/application logic to data/business model. Any Business Validations
+    Schemas: Data Transfer Objects (Create, Response Objects)
+    Models: SQLAlchemy ORM Objects
+
+Host: Interface (API) Logic
+    Handlers: responsible for mapping Schema Objects to Orm objects, and passing to manager, and Vice Versa
+    Endpoints: API Endpoints, defining any endpoint specific middleware or auth logic
