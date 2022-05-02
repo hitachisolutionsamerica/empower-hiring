@@ -2,7 +2,9 @@ from api.domain.schemas.schema_base import SchemaBase
 
 
 class TodoBase(SchemaBase):
-    """your code goes here"""
+    id: Optional[int] = None
+    description = str
+    user_id = int
 
 
 class TodoCreate(TodoBase):
