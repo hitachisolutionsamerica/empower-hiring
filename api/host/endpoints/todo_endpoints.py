@@ -13,6 +13,16 @@ from api.domain.schemas.todo import TodoCreate, Todo, TodoResponse
 
 router = InferringRouter()
 
+'''
+** Developer Comments
+
+> Created below routes to perform
+    >> [POST] - Create TODO entry
+    >> [GET] - Get TODO item by ID
+    >> [DELETE] - Delete TODO entry by ID (Not as requirement as per Readme)
+'''
+
+
 
 @cbv(router)
 class TodoEndpoints(EndpointsBase[TodoCreate, Todo]):
