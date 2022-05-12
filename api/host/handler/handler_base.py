@@ -27,3 +27,6 @@ class HandlerBase(Generic[TCreateSchema, TSchema, TResponse]):
     def get_by_id(self, id: int) -> TSchema:
         result = self.manager.get_by_id(id)
         return result
+    
+    def delete(self, id: int):
+        return self.manager.delete(id)

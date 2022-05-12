@@ -18,4 +18,7 @@ class EndpointsBase(Generic[TCreate, TDefault], ABC):
 
     def get_by_id(self, id: int) -> TDefault:
         result = self.handler.get_by_id(id)
-        return result
+        return result 
+
+    def delete(self, id: int):
+        return self.handler.delete(id)
