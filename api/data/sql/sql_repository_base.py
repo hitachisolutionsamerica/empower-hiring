@@ -36,3 +36,10 @@ class SqlRepositoryBase(Generic[TModel, TSchema], ABC):
         with self.__session_factory() as session:
             model = session.query(self.model).filter(self.model.id == id).first()
         return model
+
+    def delete(self, id: int):
+        with self.__session_factory() as session:
+            model = session.query(self.model).filter(self.model.id == id).first()
+            session.delete(model)
+            session.commit()
+        return {'message' : 'Deleted Successfully.'}
