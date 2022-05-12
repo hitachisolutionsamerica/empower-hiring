@@ -4,3 +4,4 @@ htmlcov
 *.db
 *.idea/
 *.pyc 
+__pycache__/
