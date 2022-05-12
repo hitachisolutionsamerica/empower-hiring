@@ -3,3 +3,4 @@
 htmlcov
 *.db
 *.idea/
+*.pyc 
