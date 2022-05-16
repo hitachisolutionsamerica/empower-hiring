@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "e5b51a74-a915-4b18-a9d9-ba0db9b1de65",
+		"name": "Hitachi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetch a Todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/todos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch an User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"age\": 22\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Work from home\",\r\n    \"user_id\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/todos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
